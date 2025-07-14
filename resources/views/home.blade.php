@@ -14,8 +14,8 @@
         <h2 class="text-2xl md:text-3xl font-semibold text-cyan-400">
             Junior Backend & Frontend Developer
         </h2>
-        <p class="text-gray-300 max-w-md mx-auto md:mx-0">
-            Passionate about building clean, functional, and visually engaging web applications using Laravel, JavaScript, and modern web tools. Always eager to learn and grow in a collaborative environment.
+        <p class="text-gray-300 max-w-md mx-auto md:mx-0 text-lg font-medium">
+            <span id="typed-text"></span><span class="blinking-cursor">|</span>
         </p>
     </div>
 
@@ -27,3 +27,68 @@
     </div>
 </section>
 @endsection
+
+@push('scripts')
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sentences = [
+            "Laravel & JS developer.",
+            "Clean code, modern UI.",
+            "Always growing & learning."
+        ];
+        let part = '';
+        let i = 0;
+        let offset = 0;
+        let forwards = true;
+        let skipCount = 0;
+        const skipDelay = 15;
+        const speed = 50;
+        const typedText = document.getElementById("typed-text");
+
+        function typeEffect() {
+            setInterval(() => {
+                if (forwards) {
+                    if (offset >= sentences[i].length) {
+                        skipCount++;
+                        if (skipCount === skipDelay) {
+                            forwards = false;
+                            skipCount = 0;
+                        }
+                    }
+                } else {
+                    if (offset === 0) {
+                        forwards = true;
+                        i++;
+                        if (i >= sentences.length) i = 0;
+                    }
+                }
+
+                part = sentences[i].substring(0, offset);
+                if (forwards) {
+                    offset++;
+                } else {
+                    offset--;
+                }
+
+                typedText.textContent = part;
+            }, speed);
+        }
+
+        typeEffect();
+    });
+</script>
+
+<style>
+    .blinking-cursor {
+        font-weight: normal;
+        font-size: 1.2rem;
+        color: inherit;
+        animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+</style>
+
+@endpush
