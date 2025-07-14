@@ -22,3 +22,4 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::post('/contact/send', [\App\Http\Controllers\ContactController::class, 'send'])->name('contact.send');

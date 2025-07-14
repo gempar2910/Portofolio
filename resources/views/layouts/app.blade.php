@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+    <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <head>
     <meta charset="UTF-8">
     <title>@yield('title', 'Gempar’s Portfolio')</title>
