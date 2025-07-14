@@ -10,17 +10,14 @@
     </p>
 
     <div class="space-y-4 text-gray-200 text-left max-w-md mx-auto">
-        <p><strong>📧 Email:</strong> <a href="mailto:gempar@example.com" class="text-cyan-400 hover:underline">gempar@example.com</a></p>
-        <p><strong>📱 Phone:</strong> <a href="https://wa.me/6281234567890" class="text-cyan-400 hover:underline">+62 812-3456-7890</a></p>
-        <p><strong>📍 Location:</strong> Jakarta, Indonesia</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:gemparramadhan983@gmail.com" class="text-cyan-400 hover:underline">gemparramadhan983@gmail.com</a></p>
+        <p><strong>📱 Phone:</strong> <a href="https://wa.me/6285772984968" class="text-cyan-400 hover:underline">+62 857-7298-4968</a></p>
+        <p><strong>📍 Location:</strong> East Jakarta, Indonesia</p>
     </div>
 
     <div class="mt-8 flex justify-center gap-6">
         <a href="https://github.com/gempar2910" target="_blank" class="hover:scale-110 transition">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-8 h-8 invert" alt="GitHub">
-        </a>
-        <a href="https://linkedin.com/in/gempar" target="_blank" class="hover:scale-110 transition">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="w-8 h-8" alt="LinkedIn">
         </a>
     </div>
 </section>
